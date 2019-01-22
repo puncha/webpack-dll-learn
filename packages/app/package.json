@@ -1,0 +1,13 @@
+{
+  "name": "@fengx/app",
+  "version": "1.0.0",
+  "author": "Xiaofeng Feng <Xiaofeng.feng@autodesk.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0"
+  }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="id=edge" />
+    <title>Webpack DLL Learning</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/little-loader@0.2.0/lib/little-loader.js"
+    ></script>
+    <script type="text/javascript">
+      window._lload("./dist/dll.feature.js", err => {
+        if (err) return console.error("Fail to load dll.feature.js");
+        window._lload("./dist/app.js", err => {
+          if (err) return console.error("Fail to load dll.feature.js");
+        });
+      });
+    </script>
+  </body>
+</html>

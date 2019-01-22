@@ -1,0 +1,12 @@
+{
+  "name": "@fengx/feature",
+  "version": "1.0.0",
+  "author": "Xiaofeng Feng <Xiaofeng.feng@autodesk.com>",
+  "devDependencies": {
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.1"
+  },
+  "scripts": {
+    "build": "webpack --mode production"
+  }
+}
